@@ -1,0 +1,556 @@
+@font-face {
+    font-family: 'Pilat Extended';
+    src: url('font/PilatExtended-Bold.eot');
+    src: local('font/Pilat Extended Bold'), local('font/PilatExtended-Bold'),
+        url('font/PilatExtended-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/PilatExtended-Bold.woff2') format('woff2'),
+        url('font/PilatExtended-Bold.woff') format('woff'),
+        url('font/PilatExtended-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilat Extended';
+    src: url('font/PilatExtended-Regular.eot');
+    src: local('Pilat Extended Regular'), local('font/PilatExtended-Regular'),
+        url('font/PilatExtended-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/PilatExtended-Regular.woff2') format('woff2'),
+        url('font/PilatExtended-Regular.woff') format('woff'),
+        url('font/PilatExtended-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilat Extended';
+    src: url('font/PilatExtended-Thin.eot');
+    src: local('Pilat Extended Thin'), local('font/PilatExtended-Thin'),
+        url('font/PilatExtended-Thin.eot?#iefix') format('embedded-opentype'),
+        url('font/PilatExtended-Thin.woff2') format('woff2'),
+        url('font/PilatExtended-Thin.woff') format('woff'),
+        url('font/PilatExtended-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilat Extended';
+    src: url('font/PilatExtended-Heavy.eot');
+    src: local('font/Pilat Extended Heavy'), local('font/PilatExtended-Heavy'),
+        url('font/PilatExtended-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('font/PilatExtended-Heavy.woff2') format('woff2'),
+        url('font/PilatExtended-Heavy.woff') format('woff'),
+        url('font/PilatExtended-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilat Extended';
+    src: url('font/PilatExtended-Light.eot');
+    src: local('font/Pilat Extended Light'), local('font/PilatExtended-Light'),
+        url('font/PilatExtended-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/PilatExtended-Light.woff2') format('woff2'),
+        url('font/PilatExtended-Light.woff') format('woff'),
+        url('font/PilatExtended-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilat Extended Book';
+    src: url('font/PilatExtended-Book.eot');
+    src: local('font/Pilat Extended Book'), local('font/PilatExtended-Book'),
+        url('font/PilatExtended-Book.eot?#iefix') format('embedded-opentype'),
+        url('font/PilatExtended-Book.woff2') format('woff2'),
+        url('font/PilatExtended-Book.woff') format('woff'),
+        url('font/PilatExtended-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilat Extended Demi';
+    src: url('PilatExtended-DemiBold.eot');
+    src: local('font/Pilat Extended DemiBold'), local('font/PilatExtended-DemiBold'),
+        url('font/PilatExtended-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/PilatExtended-DemiBold.woff2') format('woff2'),
+        url('font/PilatExtended-DemiBold.woff') format('woff'),
+        url('font/PilatExtended-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilat Extended';
+    src: url('PilatExtended-Black.eot');
+    src: local('font/Pilat Extended Black'), local('font/PilatExtended-Black'),
+        url('font/PilatExtended-Black.eot?#iefix') format('embedded-opentype'),
+        url('font/PilatExtended-Black.woff2') format('woff2'),
+        url('font/PilatExtended-Black.woff') format('woff'),
+        url('font/PilatExtended-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+body{ 
+    background-color: #000;
+    font-family: 'Pilat Extended';
+    overflow-x: hidden;
+    height: 100%;
+    cursor:none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #51E8EF;
+  }
+  
+.loader{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #000;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+}
+
+.load-box{ 
+    width: 50px;
+    height: 150px;
+    background-color: #fff;
+    margin: 0px 10px;
+}
+
+
+.blue{ 
+    width: 20px;
+    background-color: #51E8EF;
+}
+
+.navbar{ 
+    background: none!important;
+}
+
+
+a.nav-link{ 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+}
+
+a.active{
+    color: #51E8EF!important;
+}
+
+a.nav-link:hover{ 
+    color: #51E8EF!important;
+}
+
+.main{ 
+    position: fixed;
+}
+
+.main{ 
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    height: 1080px;
+    background-size: contain;
+}
+
+.hero h2{ 
+    margin-top: 304px;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.hero h1{ 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 123px;
+    color: #51E8EF;
+}
+
+.hero p{ 
+    font-family: 'Poppins' sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+}
+
+.main-text{ 
+    margin-top: -80px;
+}
+
+button.buy-one{ 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    margin-top: 40px;
+    padding: 16px 32px;
+    border: 2px solid #fff;
+    border-radius: 26px;
+    transition: all .5s ease-in-out;
+}
+
+
+button.buy-one:hover{ 
+    border: 2px solid #51E8EF;
+    color: #51E8EF;
+    transform: scale(105%);
+}
+
+
+ul.arr-features{ 
+    display: flex;
+    list-style: none;
+    margin-bottom: -60px;
+    
+}
+
+.items{ 
+    display: flex;
+}
+
+.items:nth-child(2){ 
+    margin: 0px 150px;
+}
+
+.text{ 
+    display: flex;
+    flex-direction: column;
+    margin-left: 27px;
+}
+
+.text p{ 
+    font-style: normal;
+    font-weight: 450;
+    font-size: 12px;
+    color: #FFFFFF; 
+    opacity: 0.6;
+}
+
+.text h3{ 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.features{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button.bike-feats{ 
+    background: none;
+    display: flex;  
+    border: none;
+}
+
+button.bike-feats:hover svg.overlay rect{ 
+    transition: all .5s ease-in-out;
+    opacity: 1;
+}
+
+button.bike-feats:hover .arrow{ 
+    transition: all .5s ease-in-out;
+    transform: scale(120%);
+}
+
+
+.icon{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{ 
+    position: relative;
+    z-index: 2;
+    left: -53px;
+}
+
+.btn-body{ 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: -35px;
+}
+
+.btn-body h6{ 
+    font-style: normal;
+    font-weight: 450;
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.btn-body h4{ 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+}
+
+.btn-brakes{ 
+    position: absolute;
+    z-index: 3;
+    top: 130px;
+    left: 940px;
+}
+
+.btn-seat{ 
+    position: absolute;
+    z-index: 3;
+    top: 230px;
+    left: 720px;
+}
+
+.btn-wheels{ 
+    position: absolute;
+    z-index: 3;
+    top: 320px;
+    left: 1120px;
+}
+
+.btn-battery{ 
+    position: absolute;
+    z-index: 3;
+    top: 380px;
+    left: 850px;
+}
+
+.btn-motor{ 
+    position: absolute;
+    z-index: 3;
+    top: 450px;
+    left: 620px;
+}
+
+.feature-list{ 
+    display: flex;
+    margin-top: 33%;
+}
+
+.feature-item{ 
+    display: flex;
+    margin: 0px 60px;
+}
+
+.list-text{  
+    margin-left: 10px;
+}
+
+.list-text p{ 
+    font-style: normal;
+    font-weight: 450;
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.list-text h6{ 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: -7px;
+}
+
+.slide{ 
+    display: flex;
+}
+
+.side{ 
+    height:100%;
+    padding-top: 160px;
+    position:absolute;
+    overflow-y:auto;
+    overflow-x:hidden;   
+}
+
+
+
+.right-side h3{ 
+    font-style: normal;
+    font-weight: 450;
+    font-size: 40px;
+    line-height: 82px;
+    color: #FFFFFF;
+}
+
+.right-side h2{ 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    color: #51E8EF;
+    margin-top: 10px;
+}
+
+.right-side p { 
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.paragraph{ 
+    display: flex;
+}
+
+button.play{
+    background: none;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+
+button.play:hover{ 
+    transform: scale(105%);
+}
+
+.first-bottom{ 
+    display: flex;
+    align-items: center;
+    background-image: url("bg 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.first-bottom p{ 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    opacity: 1;
+    margin-left: 40px;
+}
+
+.second{ 
+    margin: 140px 0px 50px 0px;
+    display: flex;
+}
+
+.main-title{ 
+    display: flex;
+}
+
+.main-title img{ 
+    margin-left: -40px;
+    position: absolute;
+}
+
+.bike-image img{ 
+    height: 603px;
+    width: 593px;
+
+}
+
+.main-features{ 
+    padding-top: 220px;
+}
+
+.main-features h3{ 
+    font-size: 20px;
+}
+
+.main-features ul{
+    margin-top: -20px;
+   list-style: none;
+}
+
+.main-features ul li::before {
+    content: "\2022";  
+    color: #51E8EF; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em; 
+  }
+
+.main-features ul li { 
+    font-size: 12px;
+    color: #fff;
+    opacity: .6;
+    padding: 10px 0px;
+}
+
+.back{ 
+    background: none;
+    border: none;
+}
+
+.icon{ 
+    transform-origin: center;
+}
+
+
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #51E8EF;
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .cursor2 {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  
+  .grow,
+  .grow-small {
+    transform: scale(4);
+    background: white;
+    mix-blend-mode: difference;
+    border: none;
+  }
+  
+  .grow-small {
+    transform: scale(2);
+  }
+
+  .back{ 
+    z-index: 5;
+    height: 34px;
+    width: 34px;
+  }
