@@ -465,7 +465,6 @@ button.play:hover{
 .bike-image img{ 
     height: 603px;
     width: 593px;
-
 }
 
 .main-features{ 
@@ -553,4 +552,24 @@ button.play:hover{
     z-index: 5;
     height: 34px;
     width: 34px;
+  }
+
+  .tyre-1{ 
+    position: relative;
+    transform: scale(10%);
+    top: 56.6%;
+    left: -10%;
+    z-index: 3;
+  }
+
+  .tyre-2{ 
+    position: absolute;
+    transform: scale(20%);
+    z-index: 3;
+    margin-left: -70px;
+    margin-top: 85px
+  }
+
+  .bike-image{ 
+    margin-top: -500px;
   }

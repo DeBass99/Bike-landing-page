@@ -161,7 +161,7 @@ function applyBlur()
 
 
 //slide animation
-document.querySelector('.side').style.display = 'none'
+document.querySelector('.side').style.display = 'block'
 
 
  var button = document.querySelectorAll('.bike-feats')
